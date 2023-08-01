@@ -1,6 +1,5 @@
 * {
-  background-color: beige;
-  box-sizing: border-box;
+  background-color: aliceblue;
 }
 
 header {
@@ -31,10 +30,78 @@ ul li {
 }
 
 footer {
-  position: fixed;
-  top: 90%;
+  position: absolute;
+  top: 290%;
   right: 0;
   left: 0;
+  bottom: 0;
   width: 50%;
   margin: 0 auto;
+  text-align: center;
+}
+
+#p {
+  font-size: 2.8rem;
+  line-height: 4rem;
+  color: tomato;
+  position: relative;
+  top: 80px;
+  margin: 0 auto;
+  background-color: rgb(255, 231, 202, 0.3);
+  text-align: center;
+  width: 80%;
+  filter: blur(0.4px);
+}
+
+.parent-div {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  gap: 2rem;
+  grid-row-gap: 8rem;
+  justify-items: space-around;
+  align-items: center;
+  width: 98%;
+  position: relative;
+  margin: 0 auto 0;
+  top: 300px;
+}
+
+.child-div {
+  width: 100%;
+  border-radius: 14px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: bisque;
+}
+
+.child-div p {
+  background-color: bisque;
+  padding-top: 1rem;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.img {
+  width: 100%;
+  background-color: bisque;
+  border-radius: 14px;
+}
+
+.child-like {
+  height: 20px;
+  width: 80%;
+  padding: 1rem;
+  border-radius: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: bisque;
+}
+
+.icon {
+  background-color: bisque;
+  cursor: pointer;
 }

@@ -16,7 +16,7 @@
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.css */ \"./src/style.css\");\n\n\n//# sourceURL=webpack://capstone-project/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.css */ \"./src/style.css\");\n/* harmony import */ var _asset_icons8_heart_30_png__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./asset/icons8-heart-30.png */ \"./src/asset/icons8-heart-30.png\");\n\n\nvar parent = document.querySelector('.parent-div');\nfetch('https://www.themealdb.com/api/json/v1/1/categories.php').then(function (res) {\n  return res.json();\n}).then(function (data) {\n  console.log(data);\n  data.categories.splice(0, 2);\n  data.categories.forEach(function (category) {\n    var name = category.strCategory;\n    var img = category.strCategoryThumb;\n    var child = document.createElement('div');\n    child.className = 'child-div';\n    child.innerHTML = \"<img class=\\\"img\\\" src=\\\"\".concat(img, \"\\\"> <p>\").concat(name, \"</p> \");\n    var like = document.createElement('div');\n    like.className = 'child-like';\n    like.innerHTML = \" likes:\".concat(1, \" <img class=\\\"icon\\\" src=\\\"\", _asset_icons8_heart_30_png__WEBPACK_IMPORTED_MODULE_1__, \"\\\">\");\n    child.appendChild(like);\n    parent.appendChild(child);\n  });\n});\n\n//# sourceURL=webpack://capstone-project/./src/index.js?");
 
 /***/ }),
 
@@ -26,7 +26,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _sty
   \*************************************************************/
 /***/ ((module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/noSourceMaps.js */ \"./node_modules/css-loader/dist/runtime/noSourceMaps.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);\n// Imports\n\n\nvar ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));\n// Module\n___CSS_LOADER_EXPORT___.push([module.id, `:root {\r\n  --orange: #d926d6;\r\n  --black: rgba(10, 13, 22, 0.9);\r\n  --light-color: #666;\r\n  --box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);\r\n  --font-family: \"Poppins\", sans-serif;\r\n}\r\n\r\nbody {\r\n  margin: 0;\r\n  font-family: \"Poppins\", sans-serif;\r\n  background: white;\r\n  height: 100vh;\r\n  background-color: #eee;\r\n  color: var(--black);\r\n}\r\n\r\nheader {\r\n  margin: 0;\r\n  display: flex;\r\n  flex-direction: row;\r\n  box-shadow: var(--box-shadow);\r\n  width: 100%;\r\n  padding: 0.5em;\r\n  background-color: white;\r\n}\r\n\r\n.fa-cutlery {\r\n  color: var(--black);\r\n  font-size: 1.3em;\r\n}\r\n\r\n.meal-popup h4 span {\r\n  text-align: left;\r\n  font-weight: 500;\r\n  font-size: 1em;\r\n  margin-left: 0.3em;\r\n}\r\n\r\nheader .logo {\r\n  display: flex;\r\n  flex-direction: row;\r\n  justify-content: center;\r\n  align-items: center;\r\n  cursor: pointer;\r\n}\r\n\r\nfooter {\r\n  position: relative;\r\n  top: 90%;\r\n  background: white;\r\n  box-shadow: #ffffff94;\r\n  border: 2px solid #ffffff94;\r\n}\r\n`, \"\"]);\n// Exports\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);\n\n\n//# sourceURL=webpack://capstone-project/./src/style.css?./node_modules/css-loader/dist/cjs.js");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/noSourceMaps.js */ \"./node_modules/css-loader/dist/runtime/noSourceMaps.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);\n// Imports\n\n\nvar ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));\n// Module\n___CSS_LOADER_EXPORT___.push([module.id, `* {\r\n  background-color: aliceblue;\r\n}\r\n\r\nheader {\r\n  display: flex;\r\n  justify-content: space-between;\r\n  align-items: center;\r\n  width: 90%;\r\n  margin: 0 auto;\r\n}\r\n\r\nnav {\r\n  display: flex;\r\n  align-items: center;\r\n  gap: 0.6rem;\r\n  font-size: 1.5rem;\r\n  color: brown;\r\n}\r\n\r\nul {\r\n  list-style: none;\r\n  display: flex;\r\n  gap: 2rem;\r\n}\r\n\r\nul li {\r\n  cursor: pointer;\r\n  font-size: 1.2rem;\r\n}\r\n\r\nfooter {\r\n  position: absolute;\r\n  top: 290%;\r\n  right: 0;\r\n  left: 0;\r\n  bottom: 0;\r\n  width: 50%;\r\n  margin: 0 auto;\r\n  text-align: center;\r\n}\r\n\r\n#p {\r\n  font-size: 2.8rem;\r\n  line-height: 4rem;\r\n  color: tomato;\r\n  position: relative;\r\n  top: 80px;\r\n  margin: 0 auto;\r\n  background-color: rgb(255, 231, 202, 0.3);\r\n  text-align: center;\r\n  width: 80%;\r\n  filter: blur(0.4px);\r\n}\r\n\r\n.parent-div {\r\n  display: grid;\r\n  grid-template-columns: 1fr 1fr 1fr;\r\n  grid-template-rows: 1fr 1fr 1fr 1fr;\r\n  gap: 2rem;\r\n  grid-row-gap: 8rem;\r\n  justify-items: space-around;\r\n  align-items: center;\r\n  width: 98%;\r\n  position: relative;\r\n  margin: 0 auto 0;\r\n  top: 300px;\r\n}\r\n\r\n.child-div {\r\n  width: 100%;\r\n  border-radius: 14px;\r\n  display: flex;\r\n  flex-direction: column;\r\n  justify-content: center;\r\n  align-items: center;\r\n  background-color: bisque;\r\n}\r\n\r\n.child-div p {\r\n  background-color: bisque;\r\n  padding-top: 1rem;\r\n  font-size: 1rem;\r\n  font-weight: 600;\r\n}\r\n\r\n.img {\r\n  width: 100%;\r\n  background-color: bisque;\r\n  border-radius: 14px;\r\n}\r\n\r\n.child-like {\r\n  height: 20px;\r\n  width: 80%;\r\n  padding: 1rem;\r\n  border-radius: 14px;\r\n  display: flex;\r\n  justify-content: space-between;\r\n  align-items: center;\r\n  background-color: bisque;\r\n}\r\n\r\n.icon {\r\n  background-color: bisque;\r\n  cursor: pointer;\r\n}\r\n`, \"\"]);\n// Exports\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);\n\n\n//# sourceURL=webpack://capstone-project/./src/style.css?./node_modules/css-loader/dist/cjs.js");
 
 /***/ }),
 
@@ -118,6 +118,16 @@ eval("\n\n/* istanbul ignore next  */\nfunction apply(styleElement, options, obj
 
 eval("\n\n/* istanbul ignore next  */\nfunction styleTagTransform(css, styleElement) {\n  if (styleElement.styleSheet) {\n    styleElement.styleSheet.cssText = css;\n  } else {\n    while (styleElement.firstChild) {\n      styleElement.removeChild(styleElement.firstChild);\n    }\n    styleElement.appendChild(document.createTextNode(css));\n  }\n}\nmodule.exports = styleTagTransform;\n\n//# sourceURL=webpack://capstone-project/./node_modules/style-loader/dist/runtime/styleTagTransform.js?");
 
+/***/ }),
+
+/***/ "./src/asset/icons8-heart-30.png":
+/*!***************************************!*\
+  !*** ./src/asset/icons8-heart-30.png ***!
+  \***************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"98ad65911c2c673ec196.png\";\n\n//# sourceURL=webpack://capstone-project/./src/asset/icons8-heart-30.png?");
+
 /***/ })
 
 /******/ 	});
@@ -171,6 +181,18 @@ eval("\n\n/* istanbul ignore next  */\nfunction styleTagTransform(css, styleElem
 /******/ 		};
 /******/ 	})();
 /******/ 	
+/******/ 	/* webpack/runtime/global */
+/******/ 	(() => {
+/******/ 		__webpack_require__.g = (function() {
+/******/ 			if (typeof globalThis === 'object') return globalThis;
+/******/ 			try {
+/******/ 				return this || new Function('return this')();
+/******/ 			} catch (e) {
+/******/ 				if (typeof window === 'object') return window;
+/******/ 			}
+/******/ 		})();
+/******/ 	})();
+/******/ 	
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */
 /******/ 	(() => {
 /******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
@@ -185,6 +207,29 @@ eval("\n\n/* istanbul ignore next  */\nfunction styleTagTransform(css, styleElem
 /******/ 			}
 /******/ 			Object.defineProperty(exports, '__esModule', { value: true });
 /******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/publicPath */
+/******/ 	(() => {
+/******/ 		var scriptUrl;
+/******/ 		if (__webpack_require__.g.importScripts) scriptUrl = __webpack_require__.g.location + "";
+/******/ 		var document = __webpack_require__.g.document;
+/******/ 		if (!scriptUrl && document) {
+/******/ 			if (document.currentScript)
+/******/ 				scriptUrl = document.currentScript.src;
+/******/ 			if (!scriptUrl) {
+/******/ 				var scripts = document.getElementsByTagName("script");
+/******/ 				if(scripts.length) {
+/******/ 					var i = scripts.length - 1;
+/******/ 					while (i > -1 && !scriptUrl) scriptUrl = scripts[i--].src;
+/******/ 				}
+/******/ 			}
+/******/ 		}
+/******/ 		// When supporting browsers where an automatic publicPath is not supported you must specify an output.publicPath manually via configuration
+/******/ 		// or pass an empty string ("") and set the __webpack_public_path__ variable from your code to use your own logic.
+/******/ 		if (!scriptUrl) throw new Error("Automatic publicPath is not supported in this browser");
+/******/ 		scriptUrl = scriptUrl.replace(/#.*$/, "").replace(/\?.*$/, "").replace(/\/[^\/]+$/, "/");
+/******/ 		__webpack_require__.p = scriptUrl;
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/nonce */
