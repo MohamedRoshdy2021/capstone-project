@@ -1,3 +1,46 @@
-.h1 {
-  background-color: beige;
+:root {
+  --orange: #d926d6;
+  --black: rgba(10, 13, 22, 0.9);
+  --light-color: #666;
+  --box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+  --font-family: "Poppins", sans-serif;
+}
+
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background: white;
+  height: 100vh;
+  background-color: #eee;
+  color: var(--black);
+}
+
+header {
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  box-shadow: var(--box-shadow);
+  width: 100%;
+  padding: 0.5em;
+  background-color: white;
+}
+
+.fa-cutlery {
+  color: var(--black);
+  font-size: 1.3em;
+}
+
+.meal-popup h4 span {
+  text-align: left;
+  font-weight: 500;
+  font-size: 1em;
+  margin-left: 0.3em;
+}
+
+header .logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
 }
