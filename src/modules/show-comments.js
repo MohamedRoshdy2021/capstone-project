@@ -9,6 +9,7 @@ async function showCommentsList(id, parent) {
       },
     },
   );
+  console.log(response);
 
   try {
     const data = await response.json();
