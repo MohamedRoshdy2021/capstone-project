@@ -3,7 +3,8 @@ const count = () => {
 
   const directChildren = box.children.length;
   const counter = document.getElementById('meals');
-  counter.innerHTML = `Meals (${directChildren})`;
+  let cat = document.getElementById('categories')
+  cat.innerHTML = `Categories: ${directChildren}`
 };
 
 export default count;

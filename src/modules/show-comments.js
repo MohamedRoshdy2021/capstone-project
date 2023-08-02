@@ -1,6 +1,6 @@
-async function showCommentsList(id, parent) {
+function showCommentsList(id, parent) {
   const apiKey = 'tnE2k6P5BdZ2HCTjbd0V';
-  const response = await fetch(
+ fetch(
     `https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/${apiKey}/comments?item_id=${id}`,
     {
       method: 'GET',
@@ -8,9 +8,9 @@ async function showCommentsList(id, parent) {
         'Content-type': 'application/json; charset=UTF-8',
       },
     },
-  );
-  try {
-    const data = await response.json();
+ )
+  .then(response => response.json())
+  .then(data => {
 
     const title = document.createElement('h3');
     title.className = 'meal-popup-comments-title';
@@ -23,9 +23,7 @@ async function showCommentsList(id, parent) {
       commentRow.innerHTML = `${comment.creation_date} ${comment.username}: ${comment.comment} `;
       parent.appendChild(commentRow);
     });
-  } catch (err) {
-    throw new Error('please be aware');
-  }
+  })
 }
 
 export default showCommentsList;
