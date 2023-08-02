@@ -49,6 +49,7 @@ footer {
   background-color: rgb(255, 231, 202, 0.3);
   text-align: center;
   width: 80%;
+  -webkit-filter: blur(0.4px);
   filter: blur(0.4px);
 }
 
@@ -58,7 +59,7 @@ footer {
   grid-template-rows: 1fr 1fr 1fr 1fr;
   gap: 2rem;
   grid-row-gap: 8rem;
-  justify-items: space-around;
+  justify-content: space-around;
   width: 98%;
   position: relative;
   margin: 0 auto 0;
