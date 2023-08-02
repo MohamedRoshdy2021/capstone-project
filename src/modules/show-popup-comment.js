@@ -83,6 +83,8 @@ async function showPopupComment(id) {
     e.preventDefault();
     if (formUsername.value && formComment.value) {
       addNewComment(id, formUsername.value, formComment.value);
+      formUsername.value = '';
+      formComment.value = '';
     } else {
       const formRes = document.createElement('p');
       formRes.className = 'meal-popup-add-comment-form-res';

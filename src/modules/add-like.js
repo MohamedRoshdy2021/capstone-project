@@ -1,6 +1,7 @@
 async function addLike(id) {
+  const key = 'tnE2k6P5BdZ2HCTjbd0V';
   fetch(
-    'https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/tnE2k6P5BdZ2HCTjbd0V/likes',
+    `https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/${key}/likes/`,
     {
       method: 'POST',
       body: JSON.stringify({

@@ -9,8 +9,6 @@ async function showCommentsList(id, parent) {
       },
     },
   );
-  console.log(response);
-
   try {
     const data = await response.json();
 
@@ -26,7 +24,7 @@ async function showCommentsList(id, parent) {
       parent.appendChild(commentRow);
     });
   } catch (err) {
-    // do nothing
+    throw new Error('please be aware');
   }
 }
 
