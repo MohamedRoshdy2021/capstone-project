@@ -7,9 +7,8 @@ function showPopupComment(id) {
   fetch(
     `https://www.themealdb.com/api/json/v1/1/lookup.php?i=${id}`,
   )
-    .then(response => response.json())
-    .then(data => {
-
+    .then((response) => response.json())
+    .then((data) => {
       const meal = document.createElement('div');
       meal.className = 'meal-popup';
 
@@ -96,7 +95,7 @@ function showPopupComment(id) {
         }
       });
       mainSection.appendChild(meal);
-      })
+    });
 }
 
 export default showPopupComment;

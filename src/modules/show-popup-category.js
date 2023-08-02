@@ -1,10 +1,9 @@
-  function showPopupCategories() {
+function showPopupCategories() {
   fetch(
     'https://www.themealdb.com/api/json/v1/1/categories.php',
   )
-    .then(response => response.json()) 
-    .then(data => {
-
+    .then((response) => response.json())
+    .then((data) => {
       const mainSection = document.querySelector('header');
       const cat = document.createElement('div');
       cat.className = 'cat-popup';
@@ -36,7 +35,7 @@
 
         mainSection.appendChild(cat);
       });
-    })
+    });
 }
 
 export default showPopupCategories;
