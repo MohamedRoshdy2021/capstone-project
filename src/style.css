@@ -125,7 +125,7 @@ footer h2 {
   display: grid;
   grid-template-rows: auto 25% 25%;
   margin: 0 1em 5em 0;
-  width: 20em;
+  width: 25em;
   height: 33em;
   background-color: white;
   border-radius: 0.5em;
