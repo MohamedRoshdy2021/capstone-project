@@ -372,7 +372,7 @@ button {
 }
 
 .cont-popup-div {
-  display: flex;
+  display: block;
   flex-direction: row;
 }
 
