@@ -61,7 +61,6 @@ header .logo h1 span {
   color: var(--orange);
 }
 
-
 header nav ul {
   display: flex;
   flex-direction: row;

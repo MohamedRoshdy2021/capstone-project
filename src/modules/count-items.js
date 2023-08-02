@@ -1,8 +1,8 @@
 const count = () => {
-  const box = document.getElementById("data");
+  const box = document.getElementById('data');
 
   const directChildren = box.children.length;
-  const counter = document.getElementById("meals");
+  const counter = document.getElementById('meals');
   counter.innerHTML = `Meals (${directChildren})`;
 };
 
