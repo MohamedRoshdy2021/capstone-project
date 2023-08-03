@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1691052829150" clover="3.2.0">
+  <project timestamp="1691052829150" name="All files">
+    <metrics statements="22" coveredstatements="11" conditionals="2" coveredconditionals="0" methods="6" coveredmethods="3" elements="30" coveredelements="14" complexity="0" loc="22" ncloc="22" packages="1" files="3" classes="3"/>
+    <file name="add-new-comment.js" path="C:\Users\JOEL\Desktop\Javascript capstone\capstone-project\src\modules\add-new-comment.js">
+      <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <line num="4" count="1" type="stmt"/>
+      <line num="5" count="1" type="stmt"/>
+      <line num="19" count="1" type="stmt"/>
+      <line num="21" count="1" type="stmt"/>
+      <line num="22" count="1" type="stmt"/>
+      <line num="24" count="1" type="stmt"/>
+    </file>
+    <file name="count-comments.js" path="C:\Users\JOEL\Desktop\Javascript capstone\capstone-project\src\modules\count-comments.js">
+      <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <line num="1" count="1" type="stmt"/>
+      <line num="2" count="3" type="stmt"/>
+      <line num="3" count="3" type="stmt"/>
+    </file>
+    <file name="show-comments.js" path="C:\Users\JOEL\Desktop\Javascript capstone\capstone-project\src\modules\show-comments.js">
+      <metrics statements="13" coveredstatements="2" conditionals="2" coveredconditionals="0" methods="4" coveredmethods="1"/>
+      <line num="2" count="1" type="stmt"/>
+      <line num="3" count="1" type="stmt"/>
+      <line num="6" count="0" type="stmt"/>
+      <line num="8" count="0" type="stmt"/>
+      <line num="10" count="0" type="stmt"/>
+      <line num="11" count="0" type="stmt"/>
+      <line num="12" count="0" type="stmt"/>
+      <line num="13" count="0" type="cond" truecount="0" falsecount="2"/>
+      <line num="14" count="0" type="stmt"/>
+      <line num="15" count="0" type="stmt"/>
+      <line num="16" count="0" type="stmt"/>
+      <line num="17" count="0" type="stmt"/>
+      <line num="18" count="0" type="stmt"/>
+    </file>
+  </project>
+</coverage>
