@@ -5,8 +5,6 @@ function showCommentsList(id, parent) {
   )
     .then((response) => response.json())
     .then((data) => {
-      console.log(data);
-
       data.forEach((comment) => {
         const title = document.createElement('h3');
         title.className = 'meal-popup-comments-title';

@@ -1,5 +1,4 @@
-  export  const mockDiv = document.createElement('div');
-
+export const mockDiv = document.createElement('div');
 
 async function renderlike() {
   const response1 = await Promise.resolve([
@@ -11,8 +10,8 @@ async function renderlike() {
 
   const likesData = response1;
   const likeData = likesData.find((element) => element.item_id);
-    const likeCount = document.createElement('span');
-    const div3 = document.createElement("div")
+  const likeCount = document.createElement('span');
+  const div3 = document.createElement('div');
   likeCount.innerHTML = `likes:${likeData.likes}`;
   div3.appendChild(likeCount);
 

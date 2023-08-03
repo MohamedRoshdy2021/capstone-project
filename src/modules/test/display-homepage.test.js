@@ -1,6 +1,4 @@
-import renderlike from './display-homepage.js';
-
-import { mockDiv } from './display-homepage.js'
+import renderlike, { mockDiv } from './display-homepage.js';
 
 describe('renderlike', () => {
   test('increments likes count on click', () => {
@@ -24,4 +22,4 @@ describe('renderlike', () => {
     const likeCountElement = mockDiv.querySelector('.div-heart span');
     expect(likeCountElement.innerHTML).toBe('likes:2');
   });
-})
+});
