@@ -33,7 +33,7 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 Leader Board <a name="about-project"></a>
+# 📖 Resturant application <a name="about-project"></a>
 
 > this is Resturant app project we have created using HTML, CSS, Javascript, linters , webpack
 
