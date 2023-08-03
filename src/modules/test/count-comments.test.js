@@ -1,30 +1,54 @@
-import countComments from '../count-comments.js';
+import showCommentsList from './comments-count';
 
-const mockQuerySelectorAll = jest.fn();
-global.document = {
-  querySelectorAll: mockQuerySelectorAll,
-};
+describe('showCommentsList', () => {
+  test('should render the correct title element', () => {
+    const parent = document.createElement('div');
+    const mockedData = [
+      {
+        creation_date: '2022-11-30',
+        username: 'Anna',
+        comment: 'Good',
+      },
+      {
+        creation_date: '2022-12-01',
+        username: 'John',
+        comment: 'Excellent',
+      },
+    ];
 
-describe('countComments', () => {
-  test('should return the correct number of comments', () => {
-    // Create mock comment elements
-    const mockedComment1 = jest.fn();
-    const mockedComment2 = jest.fn();
-    const mockedComment3 = jest.fn();
+    showCommentsList(mockedData, parent);
 
-    mockQuerySelectorAll.mockReturnValue([mockedComment1, mockedComment2, mockedComment3]);
-
-    const result = countComments();
-
-    expect(result).toEqual(countComments());
+    // make sure that the title element is present and contains the correct text
+    const titleElement = parent.querySelector('h3');
+    expect(titleElement).not.toBeNull();
+    expect(titleElement.innerHTML).toBe(`Comments (${mockedData.length})`);
   });
 
-  test('should return 0 if no comments are present', () => {
-    mockQuerySelectorAll.mockReturnValue([]);
+  test('should render the correct number of comments', () => {
+    const parent = document.createElement('div');
+    const mockedData = [
+      {
+        creation_date: '2022-11-30',
+        username: 'Anna',
+        comment: 'Good',
+      },
+      {
+        creation_date: '2022-12-01',
+        username: 'John',
+        comment: 'Excellent',
+      },
+    ];
 
-    const result = countComments();
+    showCommentsList(mockedData, parent);
 
-    // Expect the result to be 0 as there are no mocked comment elements
-    expect(result).toBe(0);
+    // the number of comments matches the length of the mocked data array
+    expect(parent.childElementCount).toBe(mockedData.length);
+
+    // make sure that each comment element contains the correct text
+    mockedData.forEach((comment, index) => {
+      const commentContainer = parent.children[index];
+      const commentText = `${comment.creation_date} ${comment.username}: ${comment.comment}`;
+      expect(commentContainer.innerHTML).toContain(commentText);
+    });
   });
 });
