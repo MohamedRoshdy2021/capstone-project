@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1691074534120" clover="3.2.0">
-  <project timestamp="1691074534121" name="All files">
+<coverage generated="1691076150084" clover="3.2.0">
+  <project timestamp="1691076150084" name="All files">
     <metrics statements="16" coveredstatements="13" conditionals="2" coveredconditionals="0" methods="4" coveredmethods="3" elements="22" coveredelements="16" complexity="0" loc="16" ncloc="16" packages="2" files="2" classes="2"/>
     <package name="modules">
       <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-      <file name="count-comments.js" path="H:\capstone-project-2\src\modules\count-comments.js">
+      <file name="count-comments.js" path="C:\Users\JOEL\Desktop\Javascript capstone\capstone-project\src\modules\count-comments.js">
         <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="3" type="stmt"/>
@@ -13,7 +13,7 @@
     </package>
     <package name="modules.test">
       <metrics statements="13" coveredstatements="10" conditionals="2" coveredconditionals="0" methods="3" coveredmethods="2"/>
-      <file name="display-homepage.js" path="H:\capstone-project-2\src\modules\test\display-homepage.js">
+      <file name="display-homepage.js" path="C:\Users\JOEL\Desktop\Javascript capstone\capstone-project\src\modules\test\display-homepage.js">
         <metrics statements="13" coveredstatements="10" conditionals="2" coveredconditionals="0" methods="3" coveredmethods="2"/>
         <line num="1" count="1" type="stmt"/>
         <line num="4" count="1" type="stmt"/>
