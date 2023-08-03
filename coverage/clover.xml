@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1691052829150" clover="3.2.0">
-  <project timestamp="1691052829150" name="All files">
+<coverage generated="1691064247868" clover="3.2.0">
+  <project timestamp="1691064247868" name="All files">
     <metrics statements="22" coveredstatements="11" conditionals="2" coveredconditionals="0" methods="6" coveredmethods="3" elements="30" coveredelements="14" complexity="0" loc="22" ncloc="22" packages="1" files="3" classes="3"/>
     <file name="add-new-comment.js" path="C:\Users\JOEL\Desktop\Javascript capstone\capstone-project\src\modules\add-new-comment.js">
       <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
